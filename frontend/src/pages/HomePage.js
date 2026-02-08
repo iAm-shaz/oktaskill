@@ -107,7 +107,7 @@ export default function HomePage() {
                 data-testid={`trusted-brand-${brand.name.toLowerCase().replace(/\s+/g, '-')}`}
                 className="bg-white rounded-lg px-6 py-4 shadow-sm flex items-center justify-center"
               >
-                <img src={brand.logo} alt={brand.name} className="h-10 md:h-12 object-contain max-w-[160px]" />
+                <img src={brand.logo} alt={brand.name} className="h-12 md:h-14 object-contain max-w-[180px]" />
               </div>
             ))}
           </div>
