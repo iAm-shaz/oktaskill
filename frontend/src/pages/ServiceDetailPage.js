@@ -1,6 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
 import { services } from '@/data/siteData';
-import { ArrowRight, TrendingUp, Cloud, Bot, GraduationCap, BarChart3, Layers, Brain, FileText, Users, Award, Sparkles, Megaphone } from 'lucide-react';
+import { ArrowRight, CheckCircle, TrendingUp, Cloud, Bot, GraduationCap, BarChart3, Layers, Brain, FileText, Users, Award, Sparkles, Megaphone } from 'lucide-react';
 
 const iconMap = {
   TrendingUp, Cloud, Bot, GraduationCap, BarChart3, Layers, Brain, FileText, Users, Award, Sparkles, Megaphone
@@ -28,37 +28,35 @@ export default function ServiceDetailPage() {
   return (
     <div data-testid={`service-page-${slug}`}>
       {/* Hero */}
-      <section className="bg-okta-primary text-white py-16 md:py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="font-montserrat text-3xl md:text-4xl font-bold mb-4">{service.title}</h1>
-              <p className="font-montserrat text-base text-white/80 leading-relaxed mb-6">{service.tagline}</p>
-            </div>
-            <div className="hidden md:flex justify-center">
-              <div className="w-64 h-64 bg-okta-muted/20 rounded-2xl flex items-center justify-center border border-okta-muted/30">
-                {Icon && <Icon size={80} className="text-okta-gold/60" />}
+      <section className="bg-okta-primary text-white py-12 md:py-16">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h1 className="font-montserrat text-3xl md:text-4xl font-bold mb-4">{service.title}</h1>
+          <p className="font-montserrat text-sm md:text-base text-white/80 leading-relaxed">{service.description}</p>
+        </div>
+      </section>
+
+      {/* Why hire this role */}
+      <section data-testid="why-hire-section" className="py-12 md:py-16 bg-okta-light">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="font-montserrat text-xl md:text-2xl font-bold text-okta-dark mb-8">Why hire this role?</h2>
+          <div className="space-y-6">
+            {service.whyHire.map((item, i) => (
+              <div key={i} data-testid={`why-hire-item-${i}`} className="flex items-start gap-3">
+                <CheckCircle size={20} className="text-okta-primary mt-0.5 flex-shrink-0" />
+                <p className="font-montserrat text-sm md:text-base text-okta-dark leading-relaxed">
+                  <span className="font-bold">{item.title}</span> &ndash; {item.desc}
+                </p>
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Why hire this role - placeholder */}
-      <section data-testid="why-hire-section" className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-montserrat text-2xl font-bold text-okta-primary mb-6">Why hire this role?</h2>
-          <p className="font-montserrat text-sm text-okta-dark/60 italic">
-            Detailed content for this role will be updated soon. Contact us to learn more about our {service.title} experts.
-          </p>
-        </div>
-      </section>
-
       {/* Get in Touch */}
-      <section className="bg-okta-primary py-12">
+      <section className="bg-okta-primary py-10 md:py-12">
         <div className="max-w-3xl mx-auto px-4 text-center">
-          <h2 className="font-montserrat text-xl font-bold text-white mb-3">Get in Touch</h2>
-          <p className="font-montserrat text-sm text-white/70 mb-6">Schedule a 30-min call with our expert</p>
+          <h2 className="font-montserrat text-xl font-bold text-white mb-2">Get in Touch</h2>
+          <p className="font-montserrat text-sm text-white/70 mb-6">Schedule a 30 mins call with our expert</p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
               to="/find-talent-form"
