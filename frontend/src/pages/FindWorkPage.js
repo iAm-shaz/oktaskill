@@ -47,13 +47,13 @@ export default function FindWorkPage() {
             <h2 className="font-montserrat text-2xl font-bold text-okta-primary mb-3">The best colleagues you've never met</h2>
             <p className="font-montserrat text-sm text-okta-dark/60 mb-8">The tools you need, all in one place</p>
           </FadeIn>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {freelancerCategories.map((cat, i) => (
               <FadeIn key={cat} delay={i * 100}>
                 <div data-testid={`freelancer-cat-${cat.toLowerCase().replace(/\s+/g, '-')}`}
-                  className="bg-okta-lighter rounded-lg p-6 text-center hover:bg-okta-primary hover:text-white transition-all duration-300 group cursor-pointer hover:-translate-y-1 hover:shadow-lg">
-                  <div className="w-12 h-12 mx-auto mb-3 bg-okta-primary/10 group-hover:bg-okta-gold/20 rounded-lg flex items-center justify-center transition-colors duration-300">
-                    <Search size={20} className="text-okta-primary group-hover:text-okta-gold transition-colors duration-300" />
+                  className="bg-okta-lighter rounded-xl aspect-square flex flex-col items-center justify-center text-center hover:bg-okta-primary hover:text-white transition-all duration-300 group cursor-pointer hover:-translate-y-1 hover:shadow-lg p-6">
+                  <div className="w-16 h-16 mb-4 bg-okta-primary/10 group-hover:bg-okta-gold/20 rounded-xl flex items-center justify-center transition-colors duration-300">
+                    <Search size={24} className="text-okta-primary group-hover:text-okta-gold transition-colors duration-300" />
                   </div>
                   <h3 className="font-montserrat font-bold text-sm">{cat}</h3>
                 </div>
