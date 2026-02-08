@@ -107,7 +107,7 @@ export default function FindWorkFormPage() {
                 placeholder="https://linkedin.com/in/yourprofile"
               />
             </div>
-            <div>
+            {/* <div>
               <label className="block font-montserrat text-sm font-bold text-okta-dark mb-1.5">Upload Resume *</label>
               <input
                 type="file"
@@ -117,9 +117,9 @@ export default function FindWorkFormPage() {
                 accept=".pdf,.doc,.docx"
                 className="w-full border border-okta-lighter rounded px-4 py-2.5 font-montserrat text-sm focus:outline-none focus:border-okta-primary transition-colors file:mr-4 file:py-1 file:px-3 file:rounded file:border-0 file:bg-okta-primary file:text-white file:font-montserrat file:text-xs file:font-bold file:cursor-pointer"
               />
-            </div>
+            </div> */}
             <div>
-              <label className="block font-montserrat text-sm font-bold text-okta-dark mb-1.5">Description (Optional)</label>
+              <label className="block font-montserrat text-sm font-bold text-okta-dark mb-1.5">Description (paste Resume)</label>
               <textarea
                 name="description"
                 rows={4}
