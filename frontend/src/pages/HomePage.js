@@ -108,16 +108,7 @@ export default function HomePage() {
           <FadeIn>
             <h2 className="font-montserrat text-2xl font-bold text-okta-primary text-center mb-8">Trusted by leading brands &amp; startups</h2>
           </FadeIn>
-          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-            {trustedBrands.map((brand, i) => (
-              <ScaleIn key={brand.name} delay={i * 100}>
-                <div data-testid={`trusted-brand-${brand.name.toLowerCase().replace(/\s+/g, '-')}`}
-                  className="bg-white rounded-lg w-[180px] h-[80px] shadow-sm flex items-center justify-center p-3 overflow-hidden hover:shadow-md hover:scale-105 transition-all duration-300">
-                  <img src={brand.logo} alt={brand.name} className="max-h-full max-w-full object-contain" />
-                </div>
-              </ScaleIn>
-            ))}
-          </div>
+          <BrandCarousel />
         </div>
       </section>
 
