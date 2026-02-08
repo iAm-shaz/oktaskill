@@ -1,51 +1,44 @@
-import { useEffect } from "react";
 import "@/App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import axios from "axios";
-
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
-
-const Home = () => {
-  const helloWorldApi = async () => {
-    try {
-      const response = await axios.get(`${API}/`);
-      console.log(response.data.message);
-    } catch (e) {
-      console.error(e, `errored out requesting / api`);
-    }
-  };
-
-  useEffect(() => {
-    helloWorldApi();
-  }, []);
-
-  return (
-    <div>
-      <header className="App-header">
-        <a
-          className="App-link"
-          href="https://emergent.sh"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="https://avatars.githubusercontent.com/in/1201222?s=120&u=2686cf91179bbafbc7a71bfbc43004cf9ae1acea&v=4" />
-        </a>
-        <p className="mt-5">Building something incredible ~!</p>
-      </header>
-    </div>
-  );
-};
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
+import HomePage from "@/pages/HomePage";
+import HireTalentPage from "@/pages/HireTalentPage";
+import FindWorkPage from "@/pages/FindWorkPage";
+import ConsultantsPage from "@/pages/ConsultantsPage";
+import WhyUsPage from "@/pages/WhyUsPage";
+import ReferEarnPage from "@/pages/ReferEarnPage";
+import ContactPage from "@/pages/ContactPage";
+import FindTalentFormPage from "@/pages/FindTalentFormPage";
+import FindWorkFormPage from "@/pages/FindWorkFormPage";
+import ThankYouPage from "@/pages/ThankYouPage";
+import LegalPage from "@/pages/LegalPage";
+import ServiceDetailPage from "@/pages/ServiceDetailPage";
+import ScrollToTop from "@/components/layout/ScrollToTop";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App font-montserrat">
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />}>
-            <Route index element={<Home />} />
-          </Route>
-        </Routes>
+        <ScrollToTop />
+        <Navbar />
+        <main className="min-h-screen">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/hire-talent" element={<HireTalentPage />} />
+            <Route path="/find-work" element={<FindWorkPage />} />
+            <Route path="/consultants" element={<ConsultantsPage />} />
+            <Route path="/why-us" element={<WhyUsPage />} />
+            <Route path="/refer-earn" element={<ReferEarnPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/find-talent-form" element={<FindTalentFormPage />} />
+            <Route path="/find-work-form" element={<FindWorkFormPage />} />
+            <Route path="/thank-you" element={<ThankYouPage />} />
+            <Route path="/legal" element={<LegalPage />} />
+            <Route path="/service/:slug" element={<ServiceDetailPage />} />
+          </Routes>
+        </main>
+        <Footer />
       </BrowserRouter>
     </div>
   );
