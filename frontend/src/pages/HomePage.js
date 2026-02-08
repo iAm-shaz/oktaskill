@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { services } from '@/data/siteData';
 import { ArrowRight, TrendingUp, Cloud, Bot, GraduationCap, BarChart3, Layers, Brain, FileText, Users, Award, Sparkles, Megaphone } from 'lucide-react';
 import { FadeIn, ScaleIn } from '@/components/animations/Animate';
+import BrandCarousel from '@/components/BrandCarousel';
 
 const iconMap = {
   TrendingUp, Cloud, Bot, GraduationCap, BarChart3, Layers, Brain, FileText, Users, Award, Sparkles, Megaphone
