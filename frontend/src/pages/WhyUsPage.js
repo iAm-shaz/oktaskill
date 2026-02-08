@@ -72,9 +72,16 @@ export default function WhyUsPage() {
           <p className="font-montserrat text-sm text-okta-dark/60 text-center max-w-xl mx-auto mb-8">
             From Fortune 500 companies to fast-growing startups, OktaSkill has been the go-to platform for finding top-tier consultants and trainers.
           </p>
-          <div className="flex flex-wrap justify-center gap-6">
-            {['SimplyLearn', 'DigitalVidya', 'Coursera', 'Emeritus'].map((b) => (
-              <div key={b} className="bg-white px-8 py-4 rounded-lg shadow-sm font-montserrat font-semibold text-sm text-okta-dark/60">{b}</div>
+          <div className="flex flex-wrap justify-center items-center gap-6">
+            {[
+              { name: 'Simplilearn', logo: '/logos/simplilearn.png' },
+              { name: 'Emeritus', logo: '/logos/emeritus.png' },
+              { name: 'Knolskape', logo: '/logos/knolskape.png' },
+              { name: 'Great Learning', logo: '/logos/great-learning.png' },
+            ].map((b) => (
+              <div key={b.name} className="bg-white px-6 py-4 rounded-lg shadow-sm flex items-center justify-center">
+                <img src={b.logo} alt={b.name} className="h-10 object-contain max-w-[140px]" />
+              </div>
             ))}
           </div>
         </div>
