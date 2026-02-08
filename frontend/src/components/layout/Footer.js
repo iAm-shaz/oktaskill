@@ -28,14 +28,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div>
-            <h4 className="font-montserrat font-bold text-sm mb-4">Resource</h4>
-            <ul className="space-y-2">
-              <li><Link to="/" className="font-montserrat text-sm text-white/70 hover:text-okta-gold transition-colors">Success stories</Link></li>
-              <li><Link to="/" className="font-montserrat text-sm text-white/70 hover:text-okta-gold transition-colors">Talent Stories</Link></li>
-              <li><Link to="/consultants" className="font-montserrat text-sm text-white/70 hover:text-okta-gold transition-colors">Discover insights</Link></li>
-            </ul>
-          </div>
 
           <div>
             <h4 className="font-montserrat font-bold text-sm mb-4">Company</h4>
