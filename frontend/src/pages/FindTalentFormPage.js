@@ -11,7 +11,7 @@ export default function FindTalentFormPage() {
     setSubmitting(true);
     const formData = new FormData(e.target);
     try {
-      await fetch('https://formspree.io/f/mkovnazd', {
+      await fetch('https://formspree.io/f/mjgevqan', {
         method: 'POST',
         body: formData,
         headers: { 'Accept': 'application/json' },

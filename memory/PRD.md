@@ -6,7 +6,7 @@ Build a multi-page marketing website for OktaSkill EdTech startup based on provi
 ## Architecture
 - **Frontend**: React + Tailwind CSS (CRA with craco)
 - **Backend**: FastAPI (minimal, not actively used for this marketing site)
-- **Forms**: Formspree (https://formspree.io/f/mkovnazd)
+- **Forms**: Formspree (https://formspree.io/f/mjgevqan)
 - **No auth** required
 
 ## Core Requirements (Static)
