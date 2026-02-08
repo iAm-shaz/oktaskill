@@ -20,9 +20,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link to="/" data-testid="navbar-logo" className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-okta-gold rounded-full flex items-center justify-center">
-              <span className="text-okta-primary font-bold text-sm">O</span>
-            </div>
+            <img src="/logos/oktaskill-logo.png" alt="OktaSkill" className="w-8 h-8 object-contain" />
             <span className="font-montserrat font-bold text-lg tracking-wide">OktaSkill</span>
           </Link>
 
