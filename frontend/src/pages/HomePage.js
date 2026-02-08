@@ -6,7 +6,12 @@ const iconMap = {
   TrendingUp, Cloud, Bot, GraduationCap, BarChart3, Layers, Brain, FileText, Users, Award, Sparkles, Megaphone
 };
 
-const trustedBrands = ['SimplyLearn', 'DigitalVidya', 'Coursera', 'Emeritus', 'Simplilearn'];
+const trustedBrands = [
+  { name: 'Simplilearn', logo: '/logos/simplilearn.png' },
+  { name: 'Emeritus', logo: '/logos/emeritus.png' },
+  { name: 'Knolskape', logo: '/logos/knolskape.png' },
+  { name: 'Great Learning', logo: '/logos/great-learning.png' },
+];
 
 const topConsultants = [
   { name: 'Rajesh Kumar', role: 'AI/ML Expert', exp: '12+ years' },
