@@ -14,10 +14,10 @@ const trustedBrands = [
 ];
 
 const topConsultants = [
-  { name: 'Rajesh Kumar', role: 'AI/ML Expert', exp: '12+ years' },
-  { name: 'Priya Sharma', role: 'Cloud Architect', exp: '10+ years' },
-  { name: 'Amit Patel', role: 'Finance Consultant', exp: '15+ years' },
-  { name: 'Sneha Gupta', role: 'Data Analyst', exp: '8+ years' },
+  { name: 'Nikhil Yadav', role: 'AI/ML Expert', exp: 'A decade of expreince in AI ML, ex Amazon AI lead' },
+  { name: 'Rithik Raj', role: 'Cloud Architect', exp: '10+ years' },
+  { name: 'Nikhil Garg', role: 'Finance Consultant', exp: '15+ years' },
+  { name: 'Rushikesh ', role: 'SME AIML/BFSI', exp: '8+ years' },
 ];
 
 export default function HomePage() {
@@ -134,7 +134,7 @@ export default function HomePage() {
                 <div className="p-4">
                   <h3 className="font-montserrat font-bold text-sm text-okta-dark">{consultant.name}</h3>
                   <p className="font-montserrat text-xs text-okta-primary mt-1">{consultant.role}</p>
-                  <p className="font-montserrat text-xs text-okta-dark/50 mt-1">{consultant.exp} experience</p>
+                  {/* <p className="font-montserrat text-xs text-okta-dark/50 mt-1">{consultant.exp} experience</p> */}
                 </div>
               </div>
             ))}
