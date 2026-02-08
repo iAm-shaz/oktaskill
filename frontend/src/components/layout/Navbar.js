@@ -30,8 +30,8 @@ export default function Navbar() {
                 key={link.path}
                 to={link.path}
                 data-testid={`nav-${link.label.toLowerCase().replace(/\s+/g, '-').replace('&', 'and')}`}
-                className={`font-montserrat text-sm font-medium transition-colors hover:text-okta-gold ${
-                  location.pathname === link.path ? 'text-okta-gold' : 'text-white'
+                className={`font-montserrat text-sm font-medium transition-all duration-300 hover:text-okta-gold relative after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:bg-okta-gold after:transition-all after:duration-300 ${
+                  location.pathname === link.path ? 'text-okta-gold after:w-full' : 'text-white after:w-0 hover:after:w-full'
                 }`}
               >
                 {link.label}
