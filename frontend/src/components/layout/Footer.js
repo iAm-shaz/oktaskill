@@ -7,9 +7,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row md:justify-between gap-8">
           <div>
             <Link to="/" className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-okta-gold rounded-full flex items-center justify-center">
-                <span className="text-okta-primary font-bold text-sm">O</span>
-              </div>
+              <img src="/logos/oktaskill-logo.png" alt="OktaSkill" className="w-8 h-8 object-contain" />
               <span className="font-montserrat font-bold text-lg">OktaSkill</span>
             </Link>
             <div className="flex items-center gap-3 mt-4">
