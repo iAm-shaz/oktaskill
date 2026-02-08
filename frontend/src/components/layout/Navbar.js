@@ -1,0 +1,72 @@
+import { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import { Menu, X } from 'lucide-react';
+
+const navLinks = [
+  { label: 'Find Work', path: '/find-work' },
+  { label: 'Hire Talent', path: '/hire-talent' },
+  { label: 'Discover Insights', path: '/consultants' },
+  { label: 'Why Us', path: '/why-us' },
+  { label: 'Refer & Earn', path: '/refer-earn' },
+  { label: 'Contact Us', path: '/contact' },
+];
+
+export default function Navbar() {
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const location = useLocation();
+
+  return (
+    <nav data-testid="navbar" className="bg-okta-primary text-white sticky top-0 z-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16">
+          <Link to="/" data-testid="navbar-logo" className="flex items-center gap-2">
+            <div className="w-8 h-8 bg-okta-gold rounded-full flex items-center justify-center">
+              <span className="text-okta-primary font-bold text-sm">O</span>
+            </div>
+            <span className="font-montserrat font-bold text-lg tracking-wide">OktaSkill</span>
+          </Link>
+
+          <div className="hidden lg:flex items-center gap-6">
+            {navLinks.map((link) => (
+              <Link
+                key={link.path}
+                to={link.path}
+                data-testid={`nav-${link.label.toLowerCase().replace(/\s+/g, '-').replace('&', 'and')}`}
+                className={`font-montserrat text-sm font-medium transition-colors hover:text-okta-gold ${
+                  location.pathname === link.path ? 'text-okta-gold' : 'text-white'
+                }`}
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
+
+          <button
+            data-testid="mobile-menu-toggle"
+            onClick={() => setMobileOpen(!mobileOpen)}
+            className="lg:hidden text-white"
+          >
+            {mobileOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
+      </div>
+
+      {mobileOpen && (
+        <div data-testid="mobile-menu" className="lg:hidden bg-okta-primary border-t border-okta-muted/30 px-4 pb-4">
+          {navLinks.map((link) => (
+            <Link
+              key={link.path}
+              to={link.path}
+              onClick={() => setMobileOpen(false)}
+              className={`block py-3 font-montserrat text-sm font-medium border-b border-okta-muted/20 transition-colors hover:text-okta-gold ${
+                location.pathname === link.path ? 'text-okta-gold' : 'text-white'
+              }`}
+            >
+              {link.label}
+            </Link>
+          ))}
+        </div>
+      )}
+    </nav>
+  );
+}
