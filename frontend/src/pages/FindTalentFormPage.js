@@ -92,6 +92,7 @@ export default function FindTalentFormPage() {
                   <option key={opt} value={opt}>{opt}</option>
                 ))}
               </select>
+              
             </div>
             <div>
               <label className="block font-montserrat text-sm font-bold text-okta-dark mb-1.5">Select your requirements *</label>
