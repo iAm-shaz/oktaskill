@@ -22,7 +22,7 @@ function App() {
       <BrowserRouter>
         <ScrollToTop />
         <Navbar />
-        <main className="min-h-screen">
+        <main>
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/hire-talent" element={<HireTalentPage />} />
