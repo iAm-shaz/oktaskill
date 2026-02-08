@@ -100,14 +100,14 @@ export default function HomePage() {
       <section data-testid="trusted-section" className="py-12 bg-okta-light">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="font-montserrat text-2xl font-bold text-okta-primary text-center mb-8">Trusted by leading brands &amp; startups</h2>
-          <div className="flex flex-wrap justify-center gap-8 md:gap-12">
+          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
             {trustedBrands.map((brand) => (
               <div
-                key={brand}
-                data-testid={`trusted-brand-${brand.toLowerCase()}`}
-                className="bg-white rounded-lg px-8 py-4 shadow-sm font-montserrat font-semibold text-sm text-okta-dark/60"
+                key={brand.name}
+                data-testid={`trusted-brand-${brand.name.toLowerCase().replace(/\s+/g, '-')}`}
+                className="bg-white rounded-lg px-6 py-4 shadow-sm flex items-center justify-center"
               >
-                {brand}
+                <img src={brand.logo} alt={brand.name} className="h-10 md:h-12 object-contain max-w-[160px]" />
               </div>
             ))}
           </div>
