@@ -4,8 +4,8 @@ export default function Footer() {
   return (
     <footer data-testid="footer" className="bg-okta-primary text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
-          <div className="lg:col-span-2">
+        <div className="flex flex-col md:flex-row md:justify-between gap-8">
+          <div>
             <Link to="/" className="flex items-center gap-2 mb-4">
               <div className="w-8 h-8 bg-okta-gold rounded-full flex items-center justify-center">
                 <span className="text-okta-primary font-bold text-sm">O</span>
@@ -20,24 +20,25 @@ export default function Footer() {
             </div>
           </div>
 
-          <div>
-            <h4 className="font-montserrat font-bold text-sm mb-4">Services</h4>
-            <ul className="space-y-2">
-              <li><Link to="/hire-talent" className="font-montserrat text-sm text-white/70 hover:text-okta-gold transition-colors">Hire talent</Link></li>
-              <li><Link to="/find-work" className="font-montserrat text-sm text-white/70 hover:text-okta-gold transition-colors">Find work</Link></li>
-            </ul>
-          </div>
+          <div className="flex gap-16 md:gap-24">
+            <div>
+              <h4 className="font-montserrat font-bold text-sm mb-4">Services</h4>
+              <ul className="space-y-2">
+                <li><Link to="/hire-talent" className="font-montserrat text-sm text-white/70 hover:text-okta-gold transition-colors">Hire talent</Link></li>
+                <li><Link to="/find-work" className="font-montserrat text-sm text-white/70 hover:text-okta-gold transition-colors">Find work</Link></li>
+              </ul>
+            </div>
 
-
-          <div>
-            <h4 className="font-montserrat font-bold text-sm mb-4">Company</h4>
-            <ul className="space-y-2">
-              <li><Link to="/why-us" className="font-montserrat text-sm text-white/70 hover:text-okta-gold transition-colors">Why us</Link></li>
-              <li><Link to="/contact" className="font-montserrat text-sm text-white/70 hover:text-okta-gold transition-colors">Contact us</Link></li>
-              <li><Link to="/refer-earn" className="font-montserrat text-sm text-white/70 hover:text-okta-gold transition-colors">Refer & earn</Link></li>
-              <li><Link to="/legal?tab=privacy" className="font-montserrat text-sm text-white/70 hover:text-okta-gold transition-colors">Privacy policy</Link></li>
-              <li><Link to="/legal?tab=terms" className="font-montserrat text-sm text-white/70 hover:text-okta-gold transition-colors">Terms & conditions</Link></li>
-            </ul>
+            <div>
+              <h4 className="font-montserrat font-bold text-sm mb-4">Company</h4>
+              <ul className="space-y-2">
+                <li><Link to="/why-us" className="font-montserrat text-sm text-white/70 hover:text-okta-gold transition-colors">Why us</Link></li>
+                <li><Link to="/contact" className="font-montserrat text-sm text-white/70 hover:text-okta-gold transition-colors">Contact us</Link></li>
+                <li><Link to="/refer-earn" className="font-montserrat text-sm text-white/70 hover:text-okta-gold transition-colors">Refer & earn</Link></li>
+                <li><Link to="/legal?tab=privacy" className="font-montserrat text-sm text-white/70 hover:text-okta-gold transition-colors">Privacy policy</Link></li>
+                <li><Link to="/legal?tab=terms" className="font-montserrat text-sm text-white/70 hover:text-okta-gold transition-colors">Terms & conditions</Link></li>
+              </ul>
+            </div>
           </div>
         </div>
 
