@@ -141,8 +141,8 @@ export const services = [
   },
   {
     slug: 'generative-ai',
-    title: 'Generative AI',
-    tagline: 'Leverage cutting-edge generative AI to create, automate, and innovate.',
+    title: 'Generative AI Trainer',
+    tagline: 'Leverage cutting-edge generative AI trainers to upskill learners.',
     icon: 'Sparkles',
     description: 'A Generative AI Trainer fine-tunes AI models by curating, annotating, and reviewing data, creating training prompts, and evaluating outputs. They ensure responses are accurate, safe, and aligned with human values. Their role bridges technology and human feedback, continuously improving AI\'s performance, reliability, and relevance across tasks and domains.',
     whyHire: [
