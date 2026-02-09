@@ -86,8 +86,7 @@ export default function FindWorkPage() {
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <FadeIn>
-            <h2 className="font-montserrat text-2xl font-bold text-okta-primary mb-4">Share your next Talent</h2>
-            <p className="font-montserrat text-sm text-okta-dark/60 mb-8">Book a 30-min consultation with us to activate your hiring needs</p>
+            <h2 className="font-montserrat text-2xl font-bold text-okta-primary mb-4">Ready to start?</h2>
             <Link to="/find-work-form" data-testid="findwork-talk-to-us-btn"
               className="inline-flex items-center gap-2 bg-okta-gold text-okta-primary font-montserrat font-bold text-sm px-8 py-3 rounded hover:brightness-110 hover:scale-105 transition-all duration-300">
               Talk to us <ArrowRight size={16} />
