@@ -33,7 +33,7 @@ export default function HomePage() {
               </FadeIn>
               <FadeIn delay={200} direction="left">
                 <p className="font-montserrat text-base md:text-lg text-white/80 mb-8 leading-relaxed">
-                  OktaSkill connects businesses with handpicked experts — 10x consultants and trainers trusted by Fortune 500 companies. Get the right talent, right when you need it.
+                  OktaSkill connects businesses with handpicked experts. Scale your business faster and save on costs by hiring the right talent to help you do your best work yet.
                 </p>
               </FadeIn>
               <FadeIn delay={300} direction="left">
