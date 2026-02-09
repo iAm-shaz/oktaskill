@@ -25,7 +25,7 @@ export default function FindWorkPage() {
               <div>
                 <h1 className="font-montserrat text-3xl md:text-4xl font-bold mb-4">Find great work</h1>
                 <p className="font-montserrat text-base text-white/80 leading-relaxed">
-                  We unite the world's trusted professionals. The tools you need, all in one place.
+                  Meet clients that you are excited to work with and take your career or business to new heights. Find opportunities for every stage of your freelance career.
                 </p>
               </div>
             </FadeIn>
