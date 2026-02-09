@@ -14,7 +14,7 @@ export function FadeIn({ children, className = '', delay = 0, direction = 'up' }
   return (
     <div
       ref={ref}
-      className={`transition-all duration-700 ease-out h-full ${
+      className={`transition-all duration-700 ease-out ${
         inView ? 'opacity-100 translate-x-0 translate-y-0' : `opacity-0 ${directionStyles[direction]}`
       } ${className}`}
       style={{ transitionDelay: `${delay}ms` }}
