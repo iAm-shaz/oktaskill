@@ -1,7 +1,14 @@
 import { Link } from 'react-router-dom';
 import { freelancerCategories } from '@/data/siteData';
-import { CheckCircle, Search, ArrowRight } from 'lucide-react';
+import { CheckCircle, ArrowRight, GraduationCap, FileText, Users, Briefcase } from 'lucide-react';
 import { FadeIn } from '@/components/animations/Animate';
+
+const categoryIcons = {
+  'Freelance Trainers': GraduationCap,
+  'Content Developers': FileText,
+  'Executive Coaches': Users,
+  'Consultants': Briefcase,
+};
 
 const whatYouGetFreelancer = [
   'Discover quality talent',
