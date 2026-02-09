@@ -27,7 +27,7 @@ export default function Footer() {
               </ul>
             </div>
 
-            <div>
+            <div className="text-right">
               <h4 className="font-montserrat font-bold text-sm mb-4">Company</h4>
               <ul className="space-y-2">
                 <li><Link to="/why-us" className="font-montserrat text-sm text-white/70 hover:text-okta-gold transition-colors">Why us</Link></li>
