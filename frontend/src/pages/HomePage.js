@@ -79,7 +79,7 @@ export default function HomePage() {
             {services.map((service, i) => {
               const Icon = iconMap[service.icon];
               return (
-                <FadeIn key={service.slug} delay={i * 60}>
+                <FadeIn key={service.slug} delay={i * 60} className="h-full">
                   <Link to={`/service/${service.slug}`} data-testid={`service-card-${service.slug}`}
                     className="group bg-okta-lighter rounded-lg p-5 hover:bg-okta-primary hover:text-white transition-all duration-300 block hover:-translate-y-1 hover:shadow-lg h-full flex flex-col">
                     <div className="w-10 h-10 bg-okta-primary/10 group-hover:bg-okta-gold/20 rounded-lg flex items-center justify-center mb-3 transition-colors duration-300">
