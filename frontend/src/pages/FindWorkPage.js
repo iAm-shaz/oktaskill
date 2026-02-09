@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { freelancerCategories } from '@/data/siteData';
-import { CheckCircle, ArrowRight, GraduationCap, FileText, Users, Briefcase } from 'lucide-react';
+import { CheckCircle, ArrowRight, GraduationCap, FileText, Users, Briefcase, Search } from 'lucide-react';
 import { FadeIn } from '@/components/animations/Animate';
 
 const categoryIcons = {
