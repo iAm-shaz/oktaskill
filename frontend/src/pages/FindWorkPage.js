@@ -95,19 +95,6 @@ export default function FindWorkPage() {
         </div>
       </section>
 
-      {/* Bottom CTA */}
-      <section className="bg-okta-primary py-12">
-        <div className="max-w-3xl mx-auto px-4 text-center">
-          <FadeIn>
-            <h2 className="font-montserrat text-xl font-bold text-white mb-3">Have an expert project?</h2>
-            <p className="font-montserrat text-sm text-white/70 mb-6">Share your profile and get matched with exciting opportunities</p>
-            <Link to="/find-work-form" data-testid="findwork-bottom-cta-btn"
-              className="inline-flex items-center gap-2 bg-okta-gold text-okta-primary font-montserrat font-bold text-sm px-8 py-3 rounded hover:brightness-110 hover:scale-105 transition-all duration-300">
-              Apply Now <ArrowRight size={16} />
-            </Link>
-          </FadeIn>
-        </div>
-      </section>
     </div>
   );
 }
