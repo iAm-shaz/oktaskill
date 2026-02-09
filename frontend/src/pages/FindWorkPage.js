@@ -25,7 +25,7 @@ export default function FindWorkPage() {
               <div>
                 <h1 className="font-montserrat text-3xl md:text-4xl font-bold mb-4">Find great work</h1>
                 <p className="font-montserrat text-base text-white/80 leading-relaxed">
-                  Meet clients that you are excited to work with and take your career or business to new heights. Find opportunities for every stage of your freelance career.
+                  We unite the world's trusted professionals. The tools you need, all in one place.
                 </p>
               </div>
             </FadeIn>
@@ -45,7 +45,7 @@ export default function FindWorkPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <h2 className="font-montserrat text-2xl font-bold text-okta-primary mb-3">The best colleagues you've never met</h2>
-            <p className="font-montserrat text-sm text-okta-dark/60 mb-8">The tools you need, all in one place</p>
+            <p className="font-montserrat text-sm text-okta-dark/60 mb-8">The work you want, all in one place</p>
           </FadeIn>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {freelancerCategories.map((cat, i) => (
