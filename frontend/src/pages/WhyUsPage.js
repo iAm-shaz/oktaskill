@@ -77,7 +77,7 @@ export default function WhyUsPage() {
           <FadeIn>
             <h2 className="font-montserrat text-2xl font-bold text-okta-primary text-center mb-12">Trusted by leading brands &amp; startups</h2>
             <p className="font-montserrat text-sm text-okta-dark/60 text-center max-w-xl mx-auto mb-8">
-              From Fortune 500 companies to fast-growing startups, OktaSkill has been the go-to platform for finding top-tier consultants and trainers.
+              From top companies to fast-growing startups, OktaSkill has been the go-to platform for finding top-tier consultants and trainers.
             </p>
           </FadeIn>
           <div className="flex flex-wrap justify-center items-center gap-6">
