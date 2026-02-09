@@ -170,7 +170,7 @@ export const services = [
 ];
 
 export const consultantCategories = [
-  'Generative AI',
+  'Generative AI Trainer',
   'Data Analyst',
   'AI Program Management',
   'Machine Learning',
