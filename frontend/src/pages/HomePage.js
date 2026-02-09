@@ -75,7 +75,7 @@ export default function HomePage() {
               From AI and cloud computing to finance and leadership — we provide expert consultants across all domains.
             </p>
           </FadeIn>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-fr">
             {services.map((service, i) => {
               const Icon = iconMap[service.icon];
               return (
