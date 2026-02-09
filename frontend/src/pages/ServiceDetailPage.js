@@ -7,9 +7,15 @@ const iconMap = {
   TrendingUp, Cloud, Bot, GraduationCap, BarChart3, Layers, Brain, FileText, Users, Award, Sparkles, Megaphone
 };
 
+const slugAliases = {
+  'generative-ai-trainer': 'generative-ai',
+  'ai-ml-trainer': 'ai-trainer',
+};
+
 export default function ServiceDetailPage() {
   const { slug } = useParams();
-  const service = services.find((s) => s.slug === slug);
+  const resolvedSlug = slugAliases[slug] || slug;
+  const service = services.find((s) => s.slug === resolvedSlug);
 
   if (!service) {
     return (
