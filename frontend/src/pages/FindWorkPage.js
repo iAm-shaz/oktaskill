@@ -55,17 +55,20 @@ export default function FindWorkPage() {
             <p className="font-montserrat text-sm text-okta-dark/60 mb-8">The work you want, all in one place</p>
           </FadeIn>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {freelancerCategories.map((cat, i) => (
+            {freelancerCategories.map((cat, i) => {
+              const Icon = categoryIcons[cat] || Briefcase;
+              return (
               <FadeIn key={cat} delay={i * 100}>
                 <div data-testid={`freelancer-cat-${cat.toLowerCase().replace(/\s+/g, '-')}`}
                   className="bg-okta-lighter rounded-xl aspect-square flex flex-col items-center justify-center text-center hover:bg-okta-primary hover:text-white transition-all duration-300 group cursor-pointer hover:-translate-y-1 hover:shadow-lg p-6">
                   <div className="w-16 h-16 mb-4 bg-okta-primary/10 group-hover:bg-okta-gold/20 rounded-xl flex items-center justify-center transition-colors duration-300">
-                    <Search size={24} className="text-okta-primary group-hover:text-okta-gold transition-colors duration-300" />
+                    <Icon size={24} className="text-okta-primary group-hover:text-okta-gold transition-colors duration-300" />
                   </div>
                   <h3 className="font-montserrat font-bold text-sm">{cat}</h3>
                 </div>
               </FadeIn>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
